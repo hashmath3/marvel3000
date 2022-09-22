@@ -24,11 +24,85 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>MARVEL</title>
+    <style>
+      @media screen and (max-width: 600px) {
+	body{
+		background-size: cover;
+    background-repeat: no-repeat ;
+	}
+.container1 img {
+  float: left;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  display: flex;
+ 
+}
+header {
+  min-width: 100%;}
+  form input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-family: inherit;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  margin-left: 27px;
+}
+
+
+}
+      .loading {
+        -webkit-animation: sk-scaleout 1s infinite ease-in-out;
+        animation: sk-scaleout 1s infinite ease-in-out;
+        background-color: #124c62;
+        border-radius: 100%;
+        height: 6em;
+        width: 6em;
+      }
+
+      .container1 {
+        align-items: center;
+       
+        display: flex;
+        height: 100vh;
+ 
+        /* width: 100vw; */
+   /* background-image: url(https://cdna.artstation.com/p/assets/images/images/017/655/292/original/javier-valles-turntablegif-01.gif?1556830160);
+      */
+      /* background-image: url(http://25.media.tumblr.com/ed437c66c2f7ce3610fa23e07a84d978/tumblr_mmcnsyQdRN1spk1tbo1_500.gif);
+         */
+        
+        background-size: cover;
+        background-color: black;
+      }
+      .container1 img{
+        align-items: center;
+        margin-left: 421px;
+      }
+
+      @keyframes sk-scaleout {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        100% {
+          -webkit-transform: scale(1);
+          opacity: 0.5;
+          transform: scale(1);
+        }
+        
+      }
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="spinner" class="container1">
+      <img src="http://25.media.tumblr.com/ed437c66c2f7ce3610fa23e07a84d978/tumblr_mmcnsyQdRN1spk1tbo1_500.gif" /> 
+      <!-- <div class="loading"></div>
+    </div> -->
+  </div>
+    <div id="root">
+     
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
