@@ -9,7 +9,7 @@ import HeroDetails from "./components/HeroDetail";
 import Home from "./components/Home";
 
 // Import dependencies
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter , Routes, Route } from "react-router-dom";
 // import Footer from "./components/Footer";
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
   }
   return (
     !loading && (
-    <Router>
+    <BrowserRouter>
        <Navbar logo={<Logo  text={"Hashmath's Marvel"} src={'https://www.freeiconspng.com/thumbs/iron-man-png/iron-man-png-9.png'}  />}>
          {/* <NavItem to={"/"} text={""} />  */}
         
@@ -33,7 +33,7 @@ function App() {
         <Route path="/:id" element={<HeroDetails />} />
       </Routes>
        {/* <Footer/>  */}
-    </Router>)
+    </BrowserRouter>)
   );
 }
 
